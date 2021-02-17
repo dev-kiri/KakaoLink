@@ -134,8 +134,6 @@ module.exports = (function () {
                         .ignoreContentType(true)
                         .execute()
                         .body()
-                        .toString()
-                        .replace('\u200b', '')
                 )
                 
                 for (var i = 0, j = chats.length, id, securityKey; i < j; i++) {
